@@ -1,0 +1,16 @@
+.MovieCard_heart {
+  animation-duration: 0.8s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 1;
+    transform: scale(4);
+  }
+
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+}

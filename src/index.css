@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+  /* background-color: #0b1123; */
+  background-color: #0c1226;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
