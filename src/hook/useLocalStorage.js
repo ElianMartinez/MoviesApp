@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const useLocalStorage = () => {
   const [datos, setDatos] = useState();
 
+  useEffect(() => {
+    const likes = localStorage.getItem("likes");
+    let data = JSON.parse(likes);
+    setDatos(data);
+  }, []);
   const searchId = (id) => {
     const likes = localStorage.getItem("likes");
     if (likes) {

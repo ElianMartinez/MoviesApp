@@ -10,7 +10,6 @@ export const ListMovies = () => {
         width: "100%",
         justifyContent: "center",
         marginBottom: "300px",
-        marginTop: "300px",
       }}
     >
       {movies.map((item, i) => {

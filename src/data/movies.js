@@ -1,6 +1,5 @@
 export const movies = [
   {
-    
     img: "https://images.plex.tv/photo?size=large-1920&scale=2&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fxm7CKN5mo09RNAcL1IP1xmJ5avT.jpg",
     name: "The Lion of the Desert",
     genre: "Drama,Biography,War,History,Action",
