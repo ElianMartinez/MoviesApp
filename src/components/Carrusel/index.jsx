@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Card } from "../Card";
 import { movies } from "../../data/movies";
-import "./styles.css";
 import arrow from "../../assets/arrow.png";
+import styles from "./Carrusel.module.css";
+
 export const Carrusel = () => {
+  console.log(styles);
   const scroll = React.createRef();
   const [moviesArray, setMovies] = useState(movies);
   const [puede, setPuede] = useState(false);
@@ -24,41 +26,12 @@ export const Carrusel = () => {
   }, []);
 
   const slideLeft = React.useCallback(() => {
-    let array = moviesArray;
-    array.push(moviesArray[currentSelect - 2]);
-    setMovies(array);
-    const to = dimensions.width / 5;
-    scroll.current.scrollLeft += to;
     setCurrentSelect(currentSelect + 1);
   }, [scroll]);
 
   return (
-    <div className="cards container10">
-      <div className="buttonConatiner">
-        <button
-          onClick={slideLeft}
-          className="nextButton"
-          style={{ width: `${dimensions.width / 5 - 20}px` }}
-        >
-          <div className="btnC">
-            <img src={arrow} alt="arrow" />
-          </div>
-          <p>{moviesArray[currentSelect + 1].name}</p>
-        </button>
-      </div>
-      x
-      <div
-        ref={scroll}
-        className="carrusel"
-        style={{
-          display: "flex",
-          overflow: "hidden",
-          scrollBehavior: "smooth",
-          msUserSelect: "none",
-          userSelect: "none",
-          position: "relative",
-        }}
-      >
+    <div className={styles.wrapper}>
+      <div className={styles.scrollContainer} ref={scroll}>
         {moviesArray.map((item, i) => {
           return (
             <Card

@@ -7,7 +7,7 @@ export const Card = ({ width, img, link = "", active = false }) => {
       <img
         style={{
           ...{ width: `${width / 5 - 20}px` },
-          ...styles.active100,
+          ...styles.CardImg100,
           ...(active ? styles.active100 : null),
         }}
         src={img}
