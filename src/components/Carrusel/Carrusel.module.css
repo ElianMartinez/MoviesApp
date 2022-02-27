@@ -15,3 +15,38 @@
   width: 100%;
   padding: 100px 0px 100px 0px;
 }
+
+.button {
+  width: 60px;
+  height: 30%;
+  background-color: rgba(2, 2, 2, 0.555);
+  position: absolute;
+  z-index: 200;
+  transition: 0.3s;
+  opacity: 0;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.backButon {
+  left: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.nextButon {
+  right: 0px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.button span {
+  color: white;
+  transform: scale(3);
+}
