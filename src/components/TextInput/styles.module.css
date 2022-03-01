@@ -9,17 +9,20 @@
 .formGrup label {
   color: #597d95;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .formGrup input {
-  height: 30px;
-  background-color: #edf7fa;
+  height: 35px;
+  font-size: 18px;
+  background-color: #edf7fa25;
   border: 1px solid #597d95b2;
   border-radius: 5px;
-  color: #597d95;
+  color: white;
 }
 
 .formGrup span {
+  margin-top:5px;
   color: rgb(219, 73, 73);
   font-size: 13px;
 }
