@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Carrusel } from "../components/Carrusel";
-import { Form } from "../components/Form";
+import { Form1 } from "../components/Form";
 import { ListMovies } from "../components/ListMovies";
 
 function App() {
   const [activeModal, setActiveModal] = useState(true);
-
   const close = () => {
     setActiveModal(false);
   };
@@ -13,9 +12,10 @@ function App() {
   const open = () => {
     setActiveModal(true);
   };
+
   return (
     <>
-      <Form active={activeModal} close={close} />
+      <Form1 active={activeModal} close={close} />
       <Carrusel />
       <ListMovies />
     </>

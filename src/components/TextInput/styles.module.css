@@ -1,0 +1,28 @@
+.formGrup {
+  padding: 0px 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formGrup label {
+  color: #597d95;
+  margin-bottom: 10px;
+}
+
+.formGrup input {
+  height: 30px;
+  background-color: #edf7fa;
+  border: 1px solid #597d95b2;
+  border-radius: 5px;
+  color: #597d95;
+}
+
+.formGrup span {
+  color: rgb(219, 73, 73);
+  font-size: 13px;
+}
+.error {
+  border: 1px solid red !important;
+}
